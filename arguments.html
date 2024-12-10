@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: darkseagreen;
+        }
+        h1{
+            background-color: aquamarine;
+            font-weight: bold;
+            font-size: x-large;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: bisque;
+            text-shadow: 2px 2px 2px black;
+            width: 280px;
+        }
+        p{
+            background-color: aquamarine;
+            font-weight: 400;
+            font-size: medium;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: burlywood;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>SUM OF ARGUMENTS</h1>
+    <p id="para"></p>
+    <script>
+        function sumAll()
+        {
+            var i;
+            var sum=0;
+            for(i=0;i<arguments.length;i++)
+        {
+            sum +=arguments[i];
+
+        }
+        return sum;
+        }
+        document.getElementById("para").innerHTML=sumAll(14,27,1,21,15,8,86)+" is the sum of all the arguments.";
+    </script></center>
+</body>
+</html>
